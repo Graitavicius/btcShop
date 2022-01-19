@@ -1,0 +1,48 @@
+.main-info {
+  width: 30%;
+  transform: matrix(1, -0.04, -0.04, -1, 0, 0);
+  margin-left: 5%;
+}
+
+.title {
+  font-family: "Roboto", "sans-serif";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 110%;
+
+  color: white;
+}
+
+.title span {
+  color: #16dfb5;
+}
+
+.description {
+  font-family: "Roboto", "sans-serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 130%;
+
+  color: #ffffff;
+}
+
+.action {
+  border: none;
+  outline: none;
+  padding: 0;
+  background-color: transparent;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 115%;
+  text-align: center;
+  color: #16dfb5;
+
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}

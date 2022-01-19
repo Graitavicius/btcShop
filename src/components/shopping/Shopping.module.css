@@ -1,0 +1,139 @@
+.shop {
+  transform: matrix(1, -0.04, -0.04, -1, 0, 0);
+  margin-bottom: 200px;
+  margin-top: 50px;
+  width: 40%;
+}
+
+.form {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #e8e8e8;
+  box-sizing: border-box;
+  border-radius: 20px;
+  width: 70%;
+  height: 450px;
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  z-index: 10;
+}
+
+.pay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pay input,
+.pay select {
+  background: #ffffff;
+}
+
+.pay input:disabled {
+  border: 1px solid #d9d9d9;
+  border-radius: 20px 0 0 20px;
+  border-right: none;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  width: 20%;
+  color: black;
+}
+
+.pay-input2 {
+  width: 40%;
+  border-radius: 0;
+  border: 1px solid #d9d9d9;
+
+  border-left: none;
+  border-right: none;
+  padding: 0.5rem;
+  outline: none;
+  text-align: center;
+}
+
+.pay-select {
+  width: 30%;
+  border: 1px solid #d9d9d9;
+  border-left: none;
+  border-radius: 0 20px 20px 0;
+  padding: 7px;
+  outline: none;
+}
+
+.buy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buy input,
+.buy select {
+  background: #ffffff;
+}
+
+.buy input:disabled {
+  border: 1px solid #d9d9d9;
+  border-radius: 20px 0 0 20px;
+  border-right: none;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  width: 20%;
+  color: black;
+}
+
+.buy-input2 {
+  width: 40%;
+  border-radius: 0;
+  border: 1px solid #d9d9d9;
+
+  border-left: none;
+  border-right: none;
+  padding: 0.5rem;
+  outline: none;
+  text-align: center;
+}
+
+.buy-select {
+  width: 30%;
+  border: 1px solid #d9d9d9;
+  border-left: none;
+  border-radius: 0 20px 20px 0;
+  padding: 7px;
+  outline: none;
+}
+
+.payment-label {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  font-size: 15px;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.bank-select {
+  background: #ffffff;
+  width: 90%;
+  padding: 0.5rem;
+  border: 1px solid #d9d9d9;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+.form-shadow {
+  z-index: 1;
+  position: absolute;
+  top: -30px;
+  left: -20px;
+  width: 70%;
+  height: 450px;
+  background: #e9f6ff;
+  border: 1px solid #e8e8e8;
+  box-sizing: border-box;
+  border-radius: 20px;
+  transform: rotate(-5.53deg);
+}

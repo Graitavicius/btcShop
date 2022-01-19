@@ -1,0 +1,13 @@
+.main {
+  position: absolute;
+  width: 85%;
+  left: 20%;
+  background: #5022ed;
+  transform: matrix(1, -0.04, -0.04, -1, 0, 0);
+  overflow: hidden;
+  border-radius: 20px;
+  display: flex;
+  gap: 5rem;
+  justify-content: flex-start;
+  align-items: center;
+}
