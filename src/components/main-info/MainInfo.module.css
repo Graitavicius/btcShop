@@ -5,10 +5,9 @@
 }
 
 .title {
-  font-family: "Roboto", "sans-serif";
   font-style: normal;
   font-weight: bold;
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: 110%;
 
   color: white;
@@ -19,10 +18,9 @@
 }
 
 .description {
-  font-family: "Roboto", "sans-serif";
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 1rem;
   line-height: 130%;
 
   color: #ffffff;
@@ -45,4 +43,10 @@
   gap: 0.5rem;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 40rem) {
+  .main-info {
+    transform: none;
+  }
 }
