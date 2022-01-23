@@ -1,5 +1,5 @@
 # The app REQUIRES a browser extention (Allow CORS: Access-Control-Allow-Origin)
-The main reason for that is that I get an CORS error since the API doesn't have Access-Control-Allow-Origin header. Tried fixing it, but decided to skip that error to work on the app to save time.
+The main reason for that is that I get a CORS error since the API doesn't have Access-Control-Allow-Origin header. Tried fixing it, but decided to skip that error to work on the app to save time.
 
 Link to the extention: https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf
 
