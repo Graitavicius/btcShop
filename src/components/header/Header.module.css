@@ -46,16 +46,7 @@
   justify-content: center;
 }
 
-/* .sign-up-button::after {
-  content: "";
-  margin-left: 1rem;
-  top: 50%;
-  border: 2px solid #ffffff;
-  transform: rotate(-90deg);
-} */
-
 .log-in-button {
-  font-family: "Roboto", "sans-serif";
   font-style: normal;
   font-weight: normal;
   font-size: 17px;

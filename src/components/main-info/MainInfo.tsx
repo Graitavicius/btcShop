@@ -16,7 +16,7 @@ const MainInfo = () => {
         any initial deposits. It's as easy as it gets!
       </p>
       <button className={classes.action}>
-        <span>Start now</span>
+        <a href="https://coingate.com">Start now</a>
         <img src={arrow} alt="arrow" />
       </button>
     </div>

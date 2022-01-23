@@ -1,19 +1,17 @@
 import React from "react";
-import "./App.css";
 import Container from "./components/container/Container";
 import Header from "./components/header/Header";
 import { useEffect, useState } from "react";
-//import Currency from "../../models/currency";
 
 const url = "https://api.coingate.com/v2/rates";
 
 function App() {
-  const [currencyOptions, setCurrencyOptions] = useState<any>([]);
+  const [currencyOptions, setCurrencyOptions] = useState<any[]>([]);
   const [fromCurrency, setFromCurrency] = useState<any>();
   const [toCurrency, setToCurrency] = useState<any>();
   const [exchangeRate, setExchangeRate] = useState();
-  const [amountFrom, setAmountFrom] = useState<any>(1);
-  const [amountTo, setAmountTo] = useState<any>(1);
+  const [amountFrom, setAmountFrom] = useState<number>(1);
+  const [amountTo, setAmountTo] = useState<number>(1);
   const [amountInFromCurrency, setAmountInFromCurrency] = useState(true);
 
   let toAmount, fromAmount;
@@ -49,34 +47,29 @@ function App() {
           return setExchangeRate(data);
         });
     }
-
-    // if (fromCurrency !== null && toCurrency !== null) {
-    //   const fromCurrencyImg = (
-    //     <img
-    //       src={`https://cryptoicons.org/api/color/${props.selectFromCurrency.toLowerCase()}/20/FFA500`}
-    //       alt=""
-    //       className={classes["currency-icon"]}
-    //     />
-    //   );
-    // }
-    //https://cryptoicons.org/api/color/btc/200/ff00ff
   }, [fromCurrency, toCurrency]);
 
-  const changeFromCurrencyHandler = (event: any) => {
-    setFromCurrency(event.target.value);
+  const changeFromCurrencyHandler = (
+    event: React.FormEvent<HTMLSelectElement>
+  ) => {
+    setFromCurrency(event.currentTarget.value);
   };
 
-  const changeToCurrencyHandler = (event: any) => {
-    setToCurrency(event.target.value);
+  const changeToCurrencyHandler = (
+    event: React.FormEvent<HTMLSelectElement>
+  ) => {
+    setToCurrency(event.currentTarget.value);
   };
 
-  const changeFromAmountHandler = (event: any) => {
-    setAmountFrom(event.target.value);
+  const changeFromAmountHandler = (
+    event: React.FormEvent<HTMLInputElement>
+  ) => {
+    setAmountFrom(+event.currentTarget.value);
     setAmountInFromCurrency(true);
   };
 
-  const changeToAmountHandler = (event: any) => {
-    setAmountTo(event.target.value);
+  const changeToAmountHandler = (event: React.FormEvent<HTMLInputElement>) => {
+    setAmountTo(+event.currentTarget.value);
     setAmountInFromCurrency(false);
   };
 

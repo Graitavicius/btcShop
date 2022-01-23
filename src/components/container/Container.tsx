@@ -7,12 +7,12 @@ const Container: React.FC<{
   currencyOptions: string[];
   selectFromCurrency: string;
   selectToCurrency: string;
-  onChangeFromCurrency: any;
-  onChangeToCurrency: any;
+  onChangeFromCurrency: (event: React.FormEvent<HTMLSelectElement>) => void;
+  onChangeToCurrency: (event: React.FormEvent<HTMLSelectElement>) => void;
   amountFrom: number;
   amountTo: number;
-  onChangeFromAmount: any;
-  onChangeToAmount: any;
+  onChangeFromAmount: (event: React.FormEvent<HTMLInputElement>) => void;
+  onChangeToAmount: (event: React.FormEvent<HTMLInputElement>) => void;
 }> = (props) => {
   return (
     <div className={classes.main}>

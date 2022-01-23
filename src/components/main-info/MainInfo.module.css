@@ -22,23 +22,22 @@
   font-weight: normal;
   font-size: 1rem;
   line-height: 130%;
-
   color: #ffffff;
 }
 
-.action {
+.action,
+.action a {
   border: none;
   outline: none;
   padding: 0;
   background-color: transparent;
-  font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 115%;
   text-align: center;
   color: #16dfb5;
-
+  text-decoration: none;
   display: flex;
   gap: 0.5rem;
   align-items: center;
@@ -46,7 +45,24 @@
 }
 
 @media (max-width: 40rem) {
+  .action {
+    display: none;
+  }
   .main-info {
     transform: none;
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+  }
+  .title {
+    grid-area: title;
+    font-size: 29px;
+    width: 100%;
+    margin: 2.5rem 0;
+  }
+  .description {
+    display: none;
   }
 }

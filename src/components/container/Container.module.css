@@ -19,9 +19,15 @@
     left: 0;
     margin: 0;
     width: 100vw;
+    height: 900px;
     transform: none;
     border-radius: 0;
-    flex-direction: column;
+    display: grid;
+    gap: 0;
     overflow: scroll;
+    grid-template-areas:
+      "title"
+      "shop"
+      "main";
   }
 }
